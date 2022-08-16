@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="row">
+    <div class="box">
+      <img
+        class="img"
+        src="https://cdn-icons-png.flaticon.com/512/147/147140.png"
+        alt=""
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="box2">
+      <h4>{{ forUser.name }}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="box3">
+      <h6>{{ forUser.identification_card }}</h6>
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Numero de cuenta</th>
+        <th scope="col">Saldo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of counts">
+        <td>{{ item.number_count }}</td>
+        <td>${{ item.balance }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

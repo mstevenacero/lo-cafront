@@ -1,0 +1,30 @@
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.icono{
+  width: 320px;
+  height: 300px;
+  margin-top: 8rem;
+  
+
+}
+.load{
+    width: 100px;
+    height: 70px;
+    margin-top: 3rem;
+   
+}
+.home{
+    height:100vh;
+   
+    background-image: url(../../../../assets/images/65295.png);
+}

@@ -1,0 +1,32 @@
+<div class="boxOne">
+  <div class="box2">
+    <div class="navbar2">
+      <ul class="navbar">
+        <li class="">
+          <a class="nav-link" (click)="changeSlot2()">Iniciar sesion</a>
+        </li>
+        <li class="">
+          <a class="nav-link" (click)="changeSlot()">Crear cuenta</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div *ngIf="change" class="box">
+    <div class="login">
+      <form class="form">
+        <h4>Iniciar sesion</h4>
+        <p type="identification_card:">
+          <input [(ngModel)]="user.identification_card" name="user.identification_card" placeholder="Escribe su cedula" />
+        </p>
+        <p type="password:">
+          <input [(ngModel)]="user.password" type="password" name="user.password" placeholder="Escribe su numero de seguridad"
+          />
+        </p>
+        <button (click)="LoginUp()">Iniciar</button>
+      </form>
+    </div>
+  </div>
+  <div *ngIf ="change2">
+  <app-createuser></app-createuser>
+</div>
+</div>

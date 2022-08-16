@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row">
+        <div class="box">
+            <div class="login">
+              <form class="form">
+                <h4>Retiro</h4>
+                <p type="balance:">
+                  <input [(ngModel)]="user.balance" name="user.balance" placeholder="Escriba su monto" />
+                </p>
+                <button (click)="sustractBalance()" >Retirar dinero </button>
+              </form>
+            </div>
+        </div>
+    </div>
+</div>
+
